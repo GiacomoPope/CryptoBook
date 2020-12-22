@@ -14,6 +14,11 @@ I hope these two goals are interesting to the community and that together we can
 
 The book is run using [mdbook](https://rust-lang.github.io/mdBook/index.html). The whole book is built from markdown files and should be simple to upkeep. We have access to MathJax for latex maths, and we have code highlighting for code snippets.
 
+## Authors
+
+Jack, ...
+
+(Please add your names to this and the toml as you wish)
 
 ## Installation 
 
