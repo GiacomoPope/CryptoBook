@@ -49,3 +49,9 @@ mdbook serve
 ```
 
 and go to `localhost:3000` to see the current progress
+
+## mdBook
+
+For more details of mdBook, the source code is on [GitHub](https://github.com/rust-lang/mdBook) and they have a [user guide](https://rust-lang.github.io/mdBook/) documenting the features available. Generally, each page in the book is created as a markdown file and then indexed by including it in the SUMMARY.md
+
+
