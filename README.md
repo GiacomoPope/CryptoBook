@@ -20,6 +20,10 @@ Jack, ...
 
 (Please add your names to this and the toml as you wish)
 
+## To Do
+
+I have made a [file](TODO.md) which has a list of topics as a checklist. If you have ideas of topics which should be covered, please add them. If you write a page which covers a topic in the list, update it my marking it complete.
+
 ## Installation 
 
 To build the book, you must have [rust](https://www.rust-lang.org/learn/get-started) installed. With rust installed, you can download mdbook with 
