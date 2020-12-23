@@ -22,11 +22,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cargo/
+          key: ${{ runner.os }}
         
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
         with:
           mdbook-version: 'latest'
+
+      - name: Setup mdbook-classy
+        run: cargo install mdbook-classy
 
       - name: Build mdBook
         run: mdbook build
