@@ -38,11 +38,11 @@ but the preprocessor we use to make the warning labels below breaks this. I have
 ## Notes, tips and warnings
 
 {:.note}
-This is a note about functionality
+This is a note about functionality which is long enough to cause a line break to check alignment
 
 ```
 {:.note}
-This is a note about functionality
+This is a note about functionality which is long enough to cause a line break to check alignment
 ```
 
 {:.tip}
