@@ -30,7 +30,14 @@ To build the book, you must have [rust](https://www.rust-lang.org/learn/get-star
 
 ```
 cargo install mdbook 
+cargo install mdbook-classy
 ```
+
+🦀🦀🦀
+
+**Note:** `mdbook-classy` is used to render div elements through preprocessing and currently causes some other markdown bugs... We either need to write one ourselves as a fork, or do a PR on the mdbook-classy github. Any rust people wanna give it a go? 
+
+🦀🦀🦀
 
 You can build the book with 
 
@@ -57,5 +64,7 @@ and go to `localhost:3000` to see the current progress
 ## mdBook
 
 For more details of mdBook, the source code is on [GitHub](https://github.com/rust-lang/mdBook) and they have a [user guide](https://rust-lang.github.io/mdBook/) documenting the features available. Generally, each page in the book is created as a markdown file and then indexed by including it in the SUMMARY.md
+
+
 
 
