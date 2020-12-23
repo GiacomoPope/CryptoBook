@@ -10,5 +10,53 @@ html {
 
 
 .note::before{
-	content: "✏️";
+	content: "note";
+	font-weight: 700;
+	color: #3c46ba;
+}
+
+.note{
+	border-left: #5a7fe4 5px solid;
+	background-color: #5a7fe455;
+	padding: 1.1em 0.5em 0.1em 0.9em;
+	border-radius: 0 5px 5px 0;
+}
+
+.tip::before{
+	content: "tip";
+	font-weight: 700;
+	color: #1d913c;
+}
+
+.tip{
+	border-left: #40c463 5px solid;
+	background-color: #40c46355;
+	padding: 1.1em 0.5em 0.1em 0.9em;
+	border-radius: 0 5px 5px 0;
+}
+
+.warning::before{
+	content: "warning";
+	font-weight: 700;
+	color: #db7d13;
+}
+
+.warning{
+	border-left: #ffbe00 5px solid;
+	background-color: rgba(255, 190, 0, 0.32);
+	padding: 1.1em 0.5em 0.1em 0.9em;
+	border-radius: 0 5px 5px 0;
+}
+
+.caution::before{
+	content: "caution";
+	font-weight: 700;
+	color: #db1313;
+}
+
+.caution{
+	border-left: #f75b4b 5px solid;
+	background-color: #f75b4b55;
+	padding: 1.1em 0.5em 0.1em 0.9em;
+	border-radius: 0 5px 5px 0;
 }
