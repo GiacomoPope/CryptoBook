@@ -20,7 +20,7 @@ html {
 .note::before{
 	content: 'Note';
 	font-weight: 700;
-	color: #1d2791;
+	color: #5a7fe4;
 }
 
 .note::after{
@@ -43,7 +43,7 @@ html {
 .tip::before{
 	content: 'Tip';
 	font-weight: 700;
-	color: #07912c;
+	color: #40c463;
 }
 
 .tip::after{
@@ -66,7 +66,7 @@ html {
 .warning::before{
 	content: 'Warning';
 	font-weight: 700;
-	color: #c26700;
+	color: #db7d13;
 }
 
 .warning::after{
@@ -89,12 +89,12 @@ html {
 .caution::before{
 	content: 'Caution';
 	font-weight: 700;
-	color: #d63524;
+	color: #ff4e4e;
 }
 
 .caution::after{
 	content: "☠";
-	color: #f75b4b;
+	color: #ff4e4e;
 	position: absolute;
 	left: 0.35em;
 	top: calc(50% - 0.65em);
