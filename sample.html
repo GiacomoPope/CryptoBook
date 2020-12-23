@@ -177,7 +177,38 @@
 		return 'Hello world\n'*arg2
 </code></pre>
 <h2><a class="header" href="#mathjax" id="mathjax">MathJax</a></h2>
-<p>\[ \mathcal{C}: y^2 = x^7 + x \]</p>
+<p>Inline maths can be made using: \( x^n + y^n = k \)</p>
+<pre><code>Inline maths can be made using: \\( x^n + y^n = k \\)
+</code></pre>
+<p>Display maths is currently rendered using the dollar sign:</p>
+<p>$$ \mathcal{C}: y^2 = x^7 + x $$</p>
+<pre><code>$$ \mathcal{C}: y^2 = x^7 + x $$
+</code></pre>
+<p>This <strong>should</strong> also work for </p>
+<pre><code>\\[ \mathcal{C}: y^2 = x^7 + x \\]
+</code></pre>
+<p>but the preprocessor we use to make the warning labels below breaks this. I have made an issue with the preprocessor and hopefully this is fixed soon.</p>
+<h2><a class="header" href="#notes-tips-and-warnings" id="notes-tips-and-warnings">Notes, tips and warnings</a></h2>
+<p>{:.note}
+This is a note about functionality</p>
+<pre><code>{:.note}
+This is a note about functionality
+</code></pre>
+<p>{:.tip}
+This is a tip about functionality</p>
+<pre><code>{:.tip}
+This is a tip about functionality
+</code></pre>
+<p>{:.warning}
+This is a warning about functionality</p>
+<pre><code>{:.warning}
+This is a warning about functionality
+</code></pre>
+<p>{:.caution}
+This is a caution about functionality</p>
+<pre><code>{:.caution}
+This is a caution about functionality
+</code></pre>
 
                     </main>
 

@@ -183,74 +183,49 @@
 <h3><a class="header" href="#general" id="general">General</a></h3>
 <p>Probably can have a better title...</p>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Groups, Rings, Fields, etc.</li>
-<li><input disabled="" type="checkbox"/>
-Congruences</li>
-<li><input disabled="" type="checkbox"/>
-GCD, LCM</li>
-<li><input disabled="" type="checkbox"/>
-Euclid's algorithm</li>
-<li><input disabled="" type="checkbox"/>
-Morphisms et al. </li>
-<li><input disabled="" type="checkbox"/>
-Frobenius endomorphism</li>
+<li>Groups, Rings, Fields, etc.</li>
+<li>Congruences</li>
+<li>GCD, LCM</li>
+<li>Euclid's algorithm</li>
+<li>Morphisms et al. </li>
+<li>Frobenius endomorphism</li>
 </ul>
 <h3><a class="header" href="#number-theory" id="number-theory">Number Theory</a></h3>
 <p>Mainly thinking things like</p>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Prime decomposition and distribution</li>
-<li><input disabled="" type="checkbox"/>
-Euler's theorem</li>
-<li><input disabled="" type="checkbox"/>
-Factoring</li>
-<li><input disabled="" type="checkbox"/>
-Legrange / Jacobi symbol</li>
+<li>Prime decomposition and distribution</li>
+<li>Euler's theorem</li>
+<li>Factoring</li>
+<li>Legrange / Jacobi symbol</li>
 </ul>
 <h3><a class="header" href="#group-theory" id="group-theory">Group Theory</a></h3>
 <p>Mainly thinking things like:</p>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Abelian groups and their relationship to key-exchange</li>
-<li><input disabled="" type="checkbox"/>
-Lagrange's theorem and small subgroup attacks</li>
+<li>Abelian groups and their relationship to key-exchange</li>
+<li>Lagrange's theorem and small subgroup attacks</li>
 </ul>
 <h3><a class="header" href="#elliptic-curves" id="elliptic-curves">Elliptic Curves</a></h3>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Weierstrass</li>
-<li><input disabled="" type="checkbox"/>
-Montgomery</li>
-<li><input disabled="" type="checkbox"/>
-Edwards</li>
+<li>Weierstrass</li>
+<li>Montgomery</li>
+<li>Edwards</li>
 </ul>
 <h3><a class="header" href="#hyperellipic-curves" id="hyperellipic-curves">Hyperellipic curves</a></h3>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Generalisation of elliptic curves</li>
-<li><input disabled="" type="checkbox"/>
-Recovering a group structure using the Jacobian</li>
-<li><input disabled="" type="checkbox"/>
-Example: genus one curves, jacobian is isomorphic to the set of points</li>
-<li><input disabled="" type="checkbox"/>
-Mumford representation of divisors</li>
-<li><input disabled="" type="checkbox"/>
-Computing the order of the Jacobian </li>
+<li>Generalisation of elliptic curves</li>
+<li>Recovering a group structure using the Jacobian</li>
+<li>Example: genus one curves, jacobian is isomorphic to the set of points</li>
+<li>Mumford representation of divisors</li>
+<li>Computing the order of the Jacobian </li>
 </ul>
 <h2><a class="header" href="#attacks" id="attacks">Attacks</a></h2>
 <h3><a class="header" href="#elliptic-curves-1" id="elliptic-curves-1">Elliptic Curves</a></h3>
 <ul>
-<li><input disabled="" type="checkbox"/>
-Why Elliptic: show conic sections are weak</li>
-<li><input disabled="" type="checkbox"/>
-Anomalous Curve attack</li>
-<li><input disabled="" type="checkbox"/>
-Pairing attacks </li>
-<li><input disabled="" type="checkbox"/>
-Singular curves </li>
-<li><input disabled="" type="checkbox"/>
-Weil Descent Attack <a href="https://eprint.iacr.org/2004/240.pdf">https://eprint.iacr.org/2004/240.pdf</a></li>
+<li>Why Elliptic: show conic sections are weak</li>
+<li>Anomalous Curve attack</li>
+<li>Pairing attacks </li>
+<li>Singular curves </li>
+<li>Weil Descent Attack <a href="https://eprint.iacr.org/2004/240.pdf">https://eprint.iacr.org/2004/240.pdf</a></li>
 </ul>
 <h1><a class="header" href="#sample-of-features" id="sample-of-features">Sample of features</a></h1>
 <h2><a class="header" href="#code-highlighing" id="code-highlighing">Code highlighing</a></h2>
@@ -261,7 +236,38 @@ Weil Descent Attack <a href="https://eprint.iacr.org/2004/240.pdf">https://eprin
 		return 'Hello world\n'*arg2
 </code></pre>
 <h2><a class="header" href="#mathjax" id="mathjax">MathJax</a></h2>
-<p>\[ \mathcal{C}: y^2 = x^7 + x \]</p>
+<p>Inline maths can be made using: \( x^n + y^n = k \)</p>
+<pre><code>Inline maths can be made using: \\( x^n + y^n = k \\)
+</code></pre>
+<p>Display maths is currently rendered using the dollar sign:</p>
+<p>$$ \mathcal{C}: y^2 = x^7 + x $$</p>
+<pre><code>$$ \mathcal{C}: y^2 = x^7 + x $$
+</code></pre>
+<p>This <strong>should</strong> also work for </p>
+<pre><code>\\[ \mathcal{C}: y^2 = x^7 + x \\]
+</code></pre>
+<p>but the preprocessor we use to make the warning labels below breaks this. I have made an issue with the preprocessor and hopefully this is fixed soon.</p>
+<h2><a class="header" href="#notes-tips-and-warnings" id="notes-tips-and-warnings">Notes, tips and warnings</a></h2>
+<p>{:.note}
+This is a note about functionality</p>
+<pre><code>{:.note}
+This is a note about functionality
+</code></pre>
+<p>{:.tip}
+This is a tip about functionality</p>
+<pre><code>{:.tip}
+This is a tip about functionality
+</code></pre>
+<p>{:.warning}
+This is a warning about functionality</p>
+<pre><code>{:.warning}
+This is a warning about functionality
+</code></pre>
+<p>{:.caution}
+This is a caution about functionality</p>
+<pre><code>{:.caution}
+This is a caution about functionality
+</code></pre>
 
                     </main>
 
