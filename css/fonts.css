@@ -7,3 +7,8 @@ html {
   	font-family: 'Inter', 'Open Sans', sans-serif; 
   }
 }
+
+
+.note::before{
+	content: "✏️";
+}

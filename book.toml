@@ -5,7 +5,6 @@ multilingual = false
 src = "src"
 title = "CryptoBook"
 
-
 [output.html]
 mathjax-support = true
 additional-css = ["css/fonts.css"]
