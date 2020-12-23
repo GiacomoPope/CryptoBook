@@ -1,6 +1,6 @@
 ## Overview
 
-Creating this file as a simple check list for topics that I think should be covered. I'm going to split topics between "background", which should cover general mathematics and "attacks" which should be split between protocols.
+Creating this chapter as a simple check list for topics that I think should be covered. I'm going to split topics between "background", which should cover general mathematics and "attacks" which should be split between protocols.
 
 Please add to this list freely and we can work through it however we can
 
@@ -14,6 +14,8 @@ Probably can have a better title...
 - [ ] Congruences
 - [ ] GCD, LCM
 - [ ] Euclid's algorithm
+- [ ] Morphisms et al. 
+- [ ] Frobenius endomorphism
 
 ### Number Theory
 
@@ -30,6 +32,8 @@ Mainly thinking things like:
 
 - [ ] Abelian groups and their relationship to key-exchange
 - [ ] Lagrange's theorem and small subgroup attacks
+
+
 
 ### Elliptic Curves
 
