@@ -24,10 +24,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Cache
+        id: cache
         uses: actions/cache@v2
         with:
-          path: |
-            ~/.cargo/
+          path: ~/.cargo/bin/mdbook-classy
           key: ${{ runner.os }}
         
       - name: Setup mdBook
@@ -36,6 +36,7 @@ jobs:
           mdbook-version: 'latest'
 
       - name: Setup mdbook-classy
+        if: steps.cache.outputs.cache-hit != 'true'
         run: cargo install mdbook-classy
 
       - name: Build mdBook
