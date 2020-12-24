@@ -7,7 +7,7 @@ title = "CryptoBook"
 
 [output.html]
 mathjax-support = true
-additional-css = ["css/fonts.css"]
+additional-css = ["css/custom.css"]
 
 
 [preprocessor.classy]

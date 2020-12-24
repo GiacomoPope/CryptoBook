@@ -1,0 +1,106 @@
+@import url('https://rsms.me/inter/inter.css');
+html { 
+	font-family: 'Inter', 'Open Sans', sans-serif; 
+  }
+@supports (font-variation-settings: normal) {
+  html { 
+  	font-family: 'Inter', 'Open Sans', sans-serif; 
+  }
+}
+
+.note, 
+.tip, 
+.caution, 
+.warning{
+	position: relative;
+	background-color: #9898981a;
+	padding: 1.25em 0.5em 1.25em 4.5em;
+	border-radius: 5px;
+}
+
+.note p,
+.tip p,
+.warning p,
+.caution p{
+	display: inline;
+	margin-left: 0.35em;
+}
+
+.note{
+	border-left: #5a84f7 solid 6px;
+}
+
+.note::before{
+	content: 'Note';
+	font-weight: 700;
+	color: #3884ff;
+}
+
+.note::after{
+	font-family: 'Fontawesome';
+	content: "\f14b";
+	color: #3884ff;
+	position: absolute;
+	left: 0.5em;
+	top: calc(50% - 0.5em);
+	font-size: 2.5em;
+}
+
+.tip{
+	border-left: #26cb7b solid 6px;
+}
+
+.tip::before{
+	content: 'Tip';
+	font-weight: 700;
+	color: #26cb7b;
+}
+
+.tip::after{
+	font-family: 'Fontawesome';
+	content: "\f0d0";
+	color: #40c463;
+	position: absolute;
+	left: 0.8em;
+	top: calc(50% - 0.4em);
+	font-size: 1.9em;
+}
+
+.warning{
+	border-left: #f77e05 solid 6px;
+}
+
+.warning::before{
+	content: 'Warning';
+	font-weight: 700;
+	color: #f77e05;
+}
+
+.warning::after{
+	font-family: 'Fontawesome';
+	content: "\f071";
+	color: #db7d13;
+	position: absolute;
+	left: 0.7em;
+	top: calc(50% - 0.475em);
+	font-size: 1.9em;
+}
+
+.caution{
+	border-left: #cb2431 solid 6px;
+}
+
+.caution::before{
+	content: 'Caution';
+	font-weight: 700;
+	color: #cb2431;
+}
+
+.caution::after{
+	content: "☠";
+	color: #cb2431;
+	position: absolute;
+	left: 0.35em;
+	top: calc(50% - 0.65em);
+	font-size: 3em;
+}
