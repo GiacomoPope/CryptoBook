@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>CryptoBook</title>
+        <title></title>
         
         <meta name="robots" content="noindex" />
         
@@ -134,7 +134,7 @@
                         
                     </div>
 
-                    <h1 class="menu-title">CryptoBook</h1>
+                    <h1 class="menu-title"></h1>
 
                     <div class="right-buttons">
                         
@@ -172,12 +172,24 @@
                     <main>
                         <h1><a class="header" href="#about-this-project" id="about-this-project">About this project</a></h1>
 <p>I am starting this repository to motivate myself to create a space to document the mathematics I am learning while building CryptoHack and learning cryptography. </p>
-<p>More than anything, I am grateful for the community of people within CryptoHack who have made the discord such an interesting and educational place, and I hope that this repo can become an extension of that, helping each other learn in a more formal and permanent setting.</p>
-<p>My first goal for this book is to include background chapters on some aspects of pure mathematics which appear in cryptography. Something I feel that is commonly missing from texts is <em>why</em> certain protocols use certain properties. Why do perform Diffie-Hellman key exchange in Abelian groups? Of all the curves, why do we pick elliptic curves? Would conic sections be ok? To have a proper appreciation for this, I think a offering a discussion on the fundementals of the inner workings of cryptographic protocols is necessary. My hope is to present this in a form which is palatable for people without formal educations in mathematics.</p>
-<p>Another goal of this project is to include code snippets as examples of protocols, attacks and maths tricks as standard. I know several of us have used the <code>sage</code> docs when trying to solve CTFs and commonly it's hard to find precisely what functions to use, and when. I would like this book to have chapters devoted to protocols and their weaknesses. Implmentation of attacks with code given. For now, I think it would be best to have examples given in sage/python and as the book grows, we can look to Magma, or lower-level programming languages. </p>
+<p>More than anything, I am grateful for the community of people within CryptoHack who have made the discord such an interesting and educational place, 
+and I hope that this repo can become an extension of that, helping each other learn in a more formal and permanent setting.</p>
+<p>My first goal for this book is to include background chapters on some aspects of pure mathematics which appear in cryptography. 
+Something I feel that is commonly missing from texts is <em>why</em> certain protocols use certain properties. 
+Why do perform Diffie-Hellman key exchange in Abelian groups? 
+Of all the curves, why do we pick elliptic curves? Would conic sections be ok? 
+To have a proper appreciation for this, I think a offering a discussion on the fundementals of the inner workings of cryptographic protocols is necessary. 
+My hope is to present this in a form which is palatable for people without formal educations in mathematics.</p>
+<p>Another goal of this project is to include code snippets as examples of protocols, attacks and maths tricks as standard. 
+I know several of us have used the <code>sage</code> docs when trying to solve CTFs and commonly it's hard to find precisely what functions to use, and when. 
+I would like this book to have chapters devoted to protocols and their weaknesses. 
+Implmentation of attacks with code given. 
+For now, I think it would be best to have examples given in sage/python and as the book grows, we can look to Magma, or lower-level programming languages. </p>
 <p>I hope these two goals are interesting to the community and that together we can create a great resource together. </p>
 <h2><a class="header" href="#overview" id="overview">Overview</a></h2>
-<p>Creating this chapter as a simple check list for topics that I think should be covered. I'm going to split topics between &quot;background&quot;, which should cover general mathematics and &quot;attacks&quot; which should be split between protocols.</p>
+<p>Creating this chapter as a simple check list for topics that I think should be covered. 
+I'm going to split topics between &quot;background&quot;, which should cover general mathematics 
+and &quot;attacks&quot; which should be split between protocols.</p>
 <p>Please add to this list freely and we can work through it however we can</p>
 <h2><a class="header" href="#background" id="background">Background</a></h2>
 <h3><a class="header" href="#general" id="general">General</a></h3>
@@ -209,6 +221,25 @@
 <li>Weierstrass</li>
 <li>Montgomery</li>
 <li>Edwards</li>
+<li>Counting points (Schoof's algorithm)</li>
+<li>Complex multiplication
+<ul>
+<li><a href="https://crypto.stanford.edu/pbc/thesis.pdf">Good reference, thanks Joachim</a></li>
+</ul>
+</li>
+</ul>
+<h4><a class="header" href="#generating-elliptic-curves" id="generating-elliptic-curves">Generating Elliptic Curves</a></h4>
+<ul>
+<li><a href="http://www.monnerat.info/publications/anomalous.pdf">Generating Anomalous curves</a></li>
+<li><a href="">Generating curves of prime order</a></li>
+<li>Generating supersingular curves <a href="https://en.wikipedia.org/wiki/Supersingular_elliptic_curve#Examples">Wikipedia</a></li>
+<li><a href="https://eprint.iacr.org/2004/058.pdf">Generating non-supersinular curves of low embedding degree</a></li>
+<li>Generating curves of arbitary order (hard)
+<ul>
+<li><a href="https://www.math.leidenuniv.nl/scripties/Broker.pdf">Thesis on the topic</a></li>
+<li>Sage implementation <a href="https://gist.github.com/ChiCubed/0977601c9ce88eda03b9d2576231192e">ChiCube's script</a></li>
+</ul>
+</li>
 </ul>
 <h3><a class="header" href="#hyperellipic-curves" id="hyperellipic-curves">Hyperellipic curves</a></h3>
 <ul>
@@ -216,13 +247,17 @@
 <li>Recovering a group structure using the Jacobian</li>
 <li>Example: genus one curves, jacobian is isomorphic to the set of points</li>
 <li>Mumford representation of divisors</li>
-<li>Computing the order of the Jacobian </li>
+<li>Computing the order of the Jacobian
+<ul>
+<li><a href="https://www.math.uwaterloo.ca/%7Eajmeneze/publications/hyperelliptic.pdf">For characteristic 2^n: Example 56</a></li>
+</ul>
+</li>
 </ul>
 <h2><a class="header" href="#attacks" id="attacks">Attacks</a></h2>
 <h3><a class="header" href="#elliptic-curves-1" id="elliptic-curves-1">Elliptic Curves</a></h3>
 <ul>
 <li>Why Elliptic: show conic sections are weak</li>
-<li>Anomalous Curve attack</li>
+<li>Smart's attack</li>
 <li>Pairing attacks </li>
 <li>Singular curves </li>
 <li>Weil Descent Attack <a href="https://eprint.iacr.org/2004/240.pdf">https://eprint.iacr.org/2004/240.pdf</a></li>
