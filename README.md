@@ -14,6 +14,10 @@ I hope these two goals are interesting to the community and that together we can
 
 The book is run using [mdbook](https://rust-lang.github.io/mdBook/index.html). The whole book is built from markdown files and should be simple to upkeep. We have access to MathJax for latex maths, and we have code highlighting for code snippets.
 
+## Preview
+
+You can view the book online at [jack4818.github.io/CryptoBook/](https://jack4818.github.io/CryptoBook/). Robin has set up a GitHub action so that whenever a change is made to main, the book updates. 
+
 ## Authors
 
 Jack, ...
@@ -22,7 +26,7 @@ Jack, ...
 
 ## To Do
 
-I have made a [file](TODO.md) which has a list of topics as a checklist. If you have ideas of topics which should be covered, please add them. If you write a page which covers a topic in the list, update it my marking it complete.
+I have made a [chapter](https://jack4818.github.io/CryptoBook/TODO.html) which has a list of topics as a checklist. If you have ideas of topics which should be covered, please add them. If you write a page which covers a topic in the list, update it my marking it complete. I have also made a project board, where people can share what they're working on.
 
 ## Installation 
 
