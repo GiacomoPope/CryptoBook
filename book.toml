@@ -1,9 +1,9 @@
 [book]
-authors = ["Jack"]
+authors = ["Jack, ..."]
 language = "en"
 multilingual = false
 src = "src"
-title = "CryptoBook"
+title = ""
 
 [output.html]
 mathjax-support = true
